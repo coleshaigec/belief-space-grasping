@@ -1,0 +1,37 @@
+
+[project]
+name = "adaptive-grasping"
+version = "0.1.0"
+description = "Belief-space stochastic optimization for adaptive fruit grasping"
+requires-python = ">=3.12,<3.13"
+
+dependencies = [
+    # Physics simulation
+    "mujoco>=3.3,<4",
+
+    # Numerical computation and inference
+    "numpy>=2,<3",
+    "scipy>=1.14,<2",
+
+    # Stochastic optimization
+    "cvxpy>=1.6,<2",
+
+    # Experiment configuration and analysis
+    "matplotlib>=3.9,<4",
+    "pandas>=2.2,<3",
+    "pyyaml>=6,<7",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8,<10",
+    "ruff",
+    "pyright",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/adaptive_grasping"]

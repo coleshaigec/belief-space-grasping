@@ -1,0 +1,125 @@
+
+# ============================================================
+# Python
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ============================================================
+# Package management
+# ============================================================
+
+# Keep uv.lock tracked for reproducible experiments
+# Keep pyproject.toml tracked
+
+# ============================================================
+# Testing, linting, and type checking
+# ============================================================
+
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.pyre/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+.hypothesis/
+
+# ============================================================
+# MuJoCo and simulation
+# ============================================================
+
+# Generated simulation data
+*.mjb
+*.npy
+*.npz
+
+# Rendered videos and animations
+*.mp4
+*.avi
+*.mov
+*.gif
+
+# Generated mesh and geometry files
+# Keep source meshes (.obj, .stl, etc.) tracked
+
+# ============================================================
+# Experiments and results
+# ============================================================
+
+results/
+outputs/
+logs/
+checkpoints/
+artifacts/
+
+# Experiment datasets
+*.parquet
+*.feather
+*.h5
+*.hdf5
+
+# ============================================================
+# Jupyter notebooks
+# ============================================================
+
+.ipynb_checkpoints/
+
+# ============================================================
+# IDE and editor
+# ============================================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# ============================================================
+# Operating systems
+# ============================================================
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ============================================================
+# Environment variables and secrets
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+
+# ============================================================
+# Temporary files
+# ============================================================
+
+tmp/
+temp/
+*.tmp
+*.bak
+*.log
